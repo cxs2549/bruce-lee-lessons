@@ -1,4 +1,6 @@
 const asyncHandler = require('express-async-handler');
+const Class = require('../models/classModel');
+const Client = require('../models/clientModel');
 
 const getClasses = asyncHandler(async (req, res) => {
   res.json({message: 'get classes'});
